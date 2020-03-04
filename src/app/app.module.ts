@@ -22,6 +22,7 @@ import { BsDatepickerModule } from 'ngx-bootstrap/datepicker';
 import { TimepickerModule } from 'ngx-bootstrap/timepicker';
 import { CartComponent } from './pages/cart/cart.component';
 import { CheckoutComponent } from './pages/checkout/checkout.component';
+import { StripeModule } from "stripe-angular"
 
 @NgModule({
   declarations: [
@@ -44,7 +45,8 @@ import { CheckoutComponent } from './pages/checkout/checkout.component';
     AppRoutingModule,
     FormsModule,
     BsDatepickerModule.forRoot(),
-    TimepickerModule.forRoot()
+    TimepickerModule.forRoot(),
+    StripeModule.forRoot("pk_test_JkUJbJMw6s1cvCYU2A8iXiVQ00M6t1ZGL7")
   ],
   providers: [],
   bootstrap: [AppComponent]

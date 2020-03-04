@@ -1,1 +1,33 @@
-<p>checkout works!</p>
+<div class="container">
+    <h2>Cart</h2>
+    <div class="row">
+        <div class="col-md-8">
+            <form #f="ngForm">
+                <div class="form-group">
+                    <label for="address">Shipping address</label>
+                    <textarea name="address" [(ngModel)]="address" class="form-control" id="address" aria-describedby="emailHelp" rows="5" cols="50"></textarea>
+                    
+                </div>
+
+            </form>
+        </div>
+        <div class="col-md-4">
+            <table class="table table-sm">
+            <thead>
+                <tr>
+                <th scope="col">Total</th>
+                <th scope="col"> </th>
+                
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="table-success">
+                <td style="text-align:center;vertical-align: middle;">{{cartService.getTotal() | currency}}</td>
+                <td><a (click)="openCheckout()" class="btn btn-success">Send order</a></td>
+                </tr>
+                
+            </tbody>
+            </table>
+        </div>
+    </div>
+</div>

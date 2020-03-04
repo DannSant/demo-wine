@@ -18,5 +18,6 @@ export class CartService {
      this.cartItems.forEach(item=>{
       amount+=item.price;
      })
+     return amount;
   }
 }
