@@ -22,7 +22,8 @@ import { BsDatepickerModule } from 'ngx-bootstrap/datepicker';
 import { TimepickerModule } from 'ngx-bootstrap/timepicker';
 import { CartComponent } from './pages/cart/cart.component';
 import { CheckoutComponent } from './pages/checkout/checkout.component';
-import { StripeModule } from "stripe-angular"
+import { StripeModule } from "stripe-angular";
+import { UserAdminComponent } from './pages/user-admin/user-admin.component'
 
 @NgModule({
   declarations: [
@@ -36,7 +37,8 @@ import { StripeModule } from "stripe-angular"
     ContactComponent,
     ScheduleComponent,
     CartComponent,
-    CheckoutComponent
+    CheckoutComponent,
+    UserAdminComponent
   ],
   imports: [
     BrowserModule,

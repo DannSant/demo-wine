@@ -5,7 +5,10 @@ import { Injectable } from '@angular/core';
 })
 export class AuthService {
 
-  userData={};
+  userData={
+    name:'',
+    admin:false
+  };
   isLogged=false;
 
   constructor() { }

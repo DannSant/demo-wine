@@ -19,7 +19,11 @@
         
         <li class="nav-item" routerLinkActive="active">
           <a class="nav-link" [routerLink]="['/contact']">Contact</a>
-      </li>     
+      </li>    
+      
+      <li *ngIf="authService.userData.admin" class="nav-item" routerLinkActive="active">
+        <a class="nav-link" [routerLink]="['/users']">Admin</a>
+    </li> 
         
       </ul>
       

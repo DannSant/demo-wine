@@ -9,6 +9,7 @@ import { ContactComponent } from './pages/contact/contact.component';
 import { ScheduleComponent } from './pages/tasting/schedule.component';
 import { CartComponent } from './pages/cart/cart.component';
 import { CheckoutComponent } from './pages/checkout/checkout.component';
+import { UserAdminComponent } from './pages/user-admin/user-admin.component';
 
 const routes:Routes =[
     {path:'', component:HomeComponent},
@@ -20,6 +21,7 @@ const routes:Routes =[
     {path:'schedule', component:ScheduleComponent},
     {path:'cart', component:CartComponent},
     {path:'checkout', component:CheckoutComponent},
+    {path:'users', component:UserAdminComponent},
 ] 
 
 @NgModule({
