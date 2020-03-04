@@ -10,8 +10,8 @@ import { CartService } from 'src/app/services/cart.service';
 export class NavbarComponent implements OnInit {
 
   constructor(
-    private authService:AuthService,
-    private cartService:CartService
+    public authService:AuthService,
+    public cartService:CartService
   ) { }
 
   ngOnInit() {

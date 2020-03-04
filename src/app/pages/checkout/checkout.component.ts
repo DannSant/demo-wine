@@ -9,7 +9,7 @@ import { CartService } from '../../services/cart.service';
 export class CheckoutComponent implements OnInit {
   address="";
   constructor(
-    private cartService:CartService
+    public cartService:CartService
   ) { }
 
   ngOnInit() {
