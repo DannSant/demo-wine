@@ -20,6 +20,8 @@ import { AppRoutingModule } from './app-routing.module';
 import { FormsModule } from '@angular/forms';
 import { BsDatepickerModule } from 'ngx-bootstrap/datepicker';
 import { TimepickerModule } from 'ngx-bootstrap/timepicker';
+import { CartComponent } from './pages/cart/cart.component';
+import { CheckoutComponent } from './pages/checkout/checkout.component';
 
 @NgModule({
   declarations: [
@@ -31,7 +33,9 @@ import { TimepickerModule } from 'ngx-bootstrap/timepicker';
     TastingComponent,
     NavbarComponent,
     ContactComponent,
-    ScheduleComponent
+    ScheduleComponent,
+    CartComponent,
+    CheckoutComponent
   ],
   imports: [
     BrowserModule,

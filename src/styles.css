@@ -97,3 +97,27 @@ body {
     .social-wrap li a.rss:hover {
     background: #191919 url(http://1.bp.blogspot.com/-xmXWc6_8mxw/UFM21nVC47I/AAAAAAAAEFs/Ydce5M-vkvw/s1600/twitter.png) no-repeat -0px -0px;
     }
+
+    .notification {
+        background-color: #555;
+        color: white;
+        text-decoration: none;
+        padding: 15px 26px;
+        position: relative;
+        display: inline-block;
+        border-radius: 100px;
+      }
+      
+      .notification:hover {
+        background: red;
+      }
+      
+      .notification .badge {
+        position: absolute;
+        top: -10px;
+        right: -10px;
+        padding: 5px 10px;
+        border-radius: 50%;
+        background: red;
+        color: white;
+      }

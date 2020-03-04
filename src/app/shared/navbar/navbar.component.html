@@ -26,8 +26,14 @@
       <ul class="navbar-nav">
         <form class="form-inline my-2 my-lg-0">
         
-          <a class="btn btn-outline-primary my-2 my-sm-0" style="margin-right: 1rem;" [routerLink]="['/login']">Login</a>
-          <a class="btn btn-outline-info my-2 my-sm-0" [routerLink]="['/signup']">Signup</a>
+          <a *ngIf="!authService.isLogged" class="btn btn-outline-primary my-2 my-sm-0" style="margin-right: 1rem;" [routerLink]="['/login']">Login</a>
+          <a *ngIf="!authService.isLogged" class="btn btn-outline-info my-2 my-sm-0" [routerLink]="['/signup']">Signup</a>
+          <h4 *ngIf="authService.isLogged">Welcome <span class="badge badge-secondary">{{authService.userData.name}}</span></h4>
+          <a *ngIf="authService.isLogged" [routerLink]="['/cart']" class="notification" style="margin-left:1rem;">
+            <i class="fas fa-shopping-cart"></i>
+            <span *ngIf="cartService.cartItems.length>0" class="badge">{{cartService.cartItems.length}}</span>
+          </a>
+          
         </form>
       </ul>     
     </div>
